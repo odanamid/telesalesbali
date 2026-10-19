@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVIN LINGKAN – Grow Your Online Sales in Bali</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); }
+    
+    /* Animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 100;
+      background: #25D366;
+      color: white;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.12) translateY(-4px);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Header scroll effect */
+    .header-scrolled {
+      background: rgba(255, 255, 255, 0.95) !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed w-full bg-white/80 backdrop-blur-md z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-900 tracking-tight">BaliGrow</div>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-gray-700">
+        <a href="#services" class="hover:text-blue-900 transition">Services</a>
+        <a href="#process" class="hover:text-blue-900 transition">Process</a>
+        <a href="#packages" class="hover:text-blue-900 transition">Packages</a>
+        <a href="#contact" class="hover:text-blue-900 transition">Contact</a>
+      </div>
+      <a href="https://wa.me/6281234567890" target="_blank" 
+         class="bg-blue-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-800 transition shadow-md hover:shadow-lg">
+        Free Audit
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-24 gradient-bg text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 text-center relative">
+      <div class="fade-up">
+        <div class="inline-block bg-white/10 backdrop-blur text-blue-100 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+          Helping Bali businesses sell more online
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
+          Grow Your Online<br>Sales in Bali
+        </h1>
+        <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+          We help product & service owners turn Instagram, Google, Shopee & WhatsApp into consistent revenue — without the overwhelm.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/6281234567890?text=Hi%20BaliGrow%2C%20I%20want%20a%20free%20audit" 
+             class="bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg hover:shadow-xl">
+            Get Free Sales Audit
+          </a>
+          <a href="#contact" 
+             class="border-2 border-white/40 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition">
+            Book Strategy Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-12 bg-white border-b">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="fade-up">
+          <div class="text-3xl md:text-4xl font-extrabold text-blue-900 counter" data-target="50">0</div>
+          <div class="text-sm text-gray-500 mt-1">Businesses Helped</div>
+        </div>
+        <div class="fade-up" style="transition-delay: 0.1s">
+          <div class="text-3xl md:text-4xl font-extrabold text-blue-900 counter" data-target="180">0</div>
+          <div class="text-sm text-gray-500 mt-1">% Avg. Sales Growth</div>
+        </div>
+        <div class="fade-up" style="transition-delay: 0.2s">
+          <div class="text-3xl md:text-4xl font-extrabold text-blue-900">24h</div>
+          <div class="text-sm text-gray-500 mt-1">Average Response</div>
+        </div>
+        <div class="fade-up" style="transition-delay: 0.3s">
+          <div class="text-3xl md:text-4xl font-extrabold text-blue-900">100%</div>
+          <div class="text-sm text-gray-500 mt-1">Bali Focused</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">Most Bali businesses are still invisible online</h2>
+          <ul class="space-y-4 text-lg text-gray-600">
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1">✕</span>
+              Beautiful products but almost no Instagram sales
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1">✕</span>
+              Café or villa full of walk-ins, near-zero direct bookings
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1">✕</span>
+              Marketplace store exists but barely sells
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 mt-1">✕</span>
+              No clear system to turn followers into paying customers
+            </li>
+          </ul>
+        </div>
+        <div class="fade-up bg-gradient-to-br from-blue-50 to-indigo-50 p-10 rounded-3xl border border-blue-100">
+          <h3 class="text-2xl font-bold text-blue-900 mb-4">We fix exactly that.</h3>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Clear strategy + content that converts + smart ads + marketplace systems = 
+            real revenue growth — while you focus on running your business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-16 fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What We Do</h2>
+        <p class="text-xl text-gray-600">Everything focused on one goal: more online sales</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service cards -->
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">📱</div>
+          <h3 class="text-xl font-bold mb-3">Social Media That Sells</h3>
+          <p class="text-gray-600 leading-relaxed">Instagram & TikTok content engineered to generate inquiries and sales, not just likes.</p>
+        </div>
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Performance Ads</h3>
+          <p class="text-gray-600 leading-relaxed">Meta & Google ads focused on real customers and bookings with transparent ROAS tracking.</p>
+        </div>
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">🛒</div>
+          <h3 class="text-xl font-bold mb-3">Marketplace Growth</h3>
+          <p class="text-gray-600 leading-relaxed">Shopee, Tokopedia & TikTok Shop optimization so your products actually move every day.</p>
+        </div>
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">🌐</div>
+          <h3 class="text-xl font-bold mb-3">Website & Google</h3>
+          <p class="text-gray-600 leading-relaxed">High-converting pages + Google Business Profile that turn searches into customers.</p>
+        </div>
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">💬</div>
+          <h3 class="text-xl font-bold mb-3">WhatsApp Systems</h3>
+          <p class="text-gray-600 leading-relaxed">Catalogs, auto-replies and funnels that convert chats into closed deals faster.</p>
+        </div>
+        <div class="fade-up bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 bg-blue-100 text-blue-900 rounded-xl flex items-center justify-center text-2xl mb-5">📊</div>
+          <h3 class="text-xl font-bold mb-3">Clear Reporting</h3>
+          <p class="text-gray-600 leading-relaxed">Monthly numbers that matter: sales, leads, ROAS. No fluff — just progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-16 fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple 4-Step Process</h2>
+        <p class="text-xl text-gray-600">From first conversation to growing sales</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="fade-up text-center">
+          <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg">1</div>
+          <h3 class="font-bold text-lg mb-2">Free Audit</h3>
+          <p class="text-gray-600 text-sm">We analyze your current online presence and sales channels.</p>
+        </div>
+        <div class="fade-up text-center" style="transition-delay: 0.1s">
+          <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg">2</div>
+          <h3 class="font-bold text-lg mb-2">Strategy</h3>
+          <p class="text-gray-600 text-sm">Clear 90-day plan focused only on revenue growth.</p>
+        </div>
+        <div class="fade-up text-center" style="transition-delay: 0.2s">
+          <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg">3</div>
+          <h3 class="font-bold text-lg mb-2">Execute</h3>
+          <p class="text-gray-600 text-sm">We handle content, ads, marketplace and systems.</p>
+        </div>
+        <div class="fade-up text-center" style="transition-delay: 0.3s">
+          <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mx-auto mb-5 shadow-lg">4</div>
+          <h3 class="font-bold text-lg mb-2">Scale</h3>
+          <p class="text-gray-600 text-sm">Monthly reviews and continuous improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-16 fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple Packages</h2>
+        <p class="text-xl text-gray-600">Start small. Scale when you’re ready.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="fade-up bg-white p-8 rounded-2xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-2">Starter</h3>
+          <p class="text-3xl font-extrabold text-blue-900 mb-6">Rp 3.5jt<span class="text-base font-normal text-gray-500">/mo</span></p>
+          <ul class="space-y-3 mb-8 text-gray-600">
+            <li class="flex items-center gap-2">✓ Content plan + 12 posts</li>
+            <li class="flex items-center gap-2">✓ Google Business optimization</li>
+            <li class="flex items-center gap-2">✓ WhatsApp setup</li>
+            <li class="flex items-center gap-2">✓ Monthly report</li>
+          </ul>
+          <a href="https://wa.me/6281234567890" class="block text-center border-2 border-blue-900 text-blue-900 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Choose Starter</a>
+        </div>
+
+        <div class="fade-up bg-blue-900 text-white p-8 rounded-2xl shadow-2xl scale-105 relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-blue-900 text-xs font-bold px-4 py-1 rounded-full">MOST POPULAR</div>
+          <h3 class="text-xl font-bold mb-2">Growth</h3>
+          <p class="text-3xl font-extrabold mb-6">Rp 7.5jt<span class="text-base font-normal text-blue-200">/mo</span></p>
+          <ul class="space-y-3 mb-8 text-blue-100">
+            <li class="flex items-center gap-2">✓ Everything in Starter</li>
+            <li class="flex items-center gap-2">✓ Meta Ads management</li>
+            <li class="flex items-center gap-2">✓ Marketplace optimization</li>
+            <li class="flex items-center gap-2">✓ Weekly optimization</li>
+          </ul>
+          <a href="https://wa.me/6281234567890" class="block text-center bg-white text-blue-900 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Choose Growth</a>
+        </div>
+
+        <div class="fade-up bg-white p-8 rounded-2xl border border-gray-200">
+          <h3 class="text-xl font-bold mb-2">Scale</h3>
+          <p class="text-3xl font-extrabold text-blue-900 mb-6">Custom</p>
+          <ul class="space-y-3 mb-8 text-gray-600">
+            <li class="flex items-center gap-2">✓ Full multi-channel funnel</li>
+            <li class="flex items-center gap-2">✓ Advanced tracking</li>
+            <li class="flex items-center gap-2">✓ Priority support</li>
+            <li class="flex items-center gap-2">✓ Dedicated strategist</li>
+          </ul>
+          <a href="https://wa.me/6281234567890" class="block text-center border-2 border-blue-900 text-blue-900 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Talk to Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-16 fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Let’s Talk</h2>
+        <p class="text-xl text-gray-600">Choose the way that works best for you</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="https://wa.me/6281234567890?text=Hi%20BaliGrow%2C%20I%20want%20a%20free%20audit" target="_blank"
+           class="fade-up group bg-white border border-gray-200 p-8 rounded-2xl text-center hover:border-green-400 hover:shadow-xl transition duration-300">
+          <div class="text-5xl mb-5 group-hover:scale-110 transition">💬</div>
+          <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+          <p class="text-gray-600 mb-6">Fastest response<br>Usually within minutes</p>
+          <span class="inline-block bg-green-500 text-white px-6 py-2.5 rounded-full font-semibold group-hover:bg-green-600 transition">Chat Now</span>
+        </a>
+
+        <a href="mailto:hello@baligrow.id?subject=Free%20Sales%20Audit" 
+           class="fade-up group bg-white border border-gray-200 p-8 rounded-2xl text-center hover:border-blue-400 hover:shadow-xl transition duration-300" style="transition-delay: 0.1s">
+          <div class="text-5xl mb-5 group-hover:scale-110 transition">📧</div>
+          <h3 class="text-xl font-bold mb-2">Email</h3>
+          <p class="text-gray-600 mb-6">hello@baligrow.id<br>For detailed questions</p>
+          <span class="inline-block bg-blue-900 text-white px-6 py-2.5 rounded-full font-semibold group-hover:bg-blue-800 transition">Send Email</span>
+        </a>
+
+        <a href="https://calendar.google.com/calendar/appointments/schedules/YOUR_BOOKING_LINK_HERE" target="_blank"
+           class="fade-up group bg-white border border-gray-200 p-8 rounded-2xl text-center hover:border-indigo-400 hover:shadow-xl transition duration-300" style="transition-delay: 0.2s">
+          <div class="text-5xl mb-5 group-hover:scale-110 transition">📅</div>
+          <h3 class="text-xl font-bold mb-2">Book a Call</h3>
+          <p class="text-gray-600 mb-6">Free 20-min strategy call<br>Pick any available time</p>
+          <span class="inline-block bg-indigo-600 text-white px-6 py-2.5 rounded-full font-semibold group-hover:bg-indigo-700 transition">Open Calendar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 gradient-bg text-white">
+    <div class="max-w-4xl mx-auto px-5 text-center fade-up">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to grow your online sales?</h2>
+      <p class="text-xl text-blue-100 mb-10">Get a free 20-minute audit. Clear next steps. No pressure.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/6281234567890?text=Hi%20BaliGrow%2C%20I%20want%20the%20free%20sales%20audit" 
+           class="bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg">
+          WhatsApp Me Now
+        </a>
+        <a href="https://calendar.google.com/calendar/appointments/schedules/YOUR_BOOKING_LINK_HERE" target="_blank"
+           class="border-2 border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition">
+          Book Free Call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <div class="text-xl font-bold text-white mb-1">BaliGrow</div>
+          <div class="text-sm">Helping Bali businesses sell more online</div>
+        </div>
+        <div class="text-sm text-center md:text-right space-y-1">
+          <div>WhatsApp: <a href="https://wa.me/6281234567890" class="text-white hover:underline">+62 812-3456-7890</a></div>
+          <div>Email: <a href="mailto:hello@baligrow.id" class="text-white hover:underline">hello@baligrow.id</a></div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        © 2026 BaliGrow. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890?text=Hi%20BaliGrow%2C%20I%20want%20a%20free%20audit" 
+     target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.325 2.77.94 3.995L.057 16l4.207-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.655.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.473.205.842.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Header scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('header-scrolled');
+      } else {
+        navbar.classList.remove('header-scrolled');
+      }
+    });
+
+    // Fade-up animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Animated counters
+    const counters = document.querySelectorAll('.counter');
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const increment = target / 50;
+      let current = 0;
+      const update = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = Math.ceil(current);
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+  </script>
+</body>
+</html>
